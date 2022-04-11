@@ -1,2 +1,2 @@
-                                      RESEARCH FOR NETWORK TRAFFIC  DATASETS AUGMENTATION ALGORITHM
+
 Research was conducted for two types of malicious software. Boosting was chosen as the augmentation method. The training was carried out on the original, training, test and validation datasets. The process of augmentation of datasets was carried out in a granular manner, using time stamps. The simulation of the algorithm operation at different iterations and visualization of the results was carried out.
