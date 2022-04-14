@@ -83,24 +83,7 @@ static uint32_t f_localnet;
 cap_channel_t *capdns;
 #endif
 
-/*
- * Return a name for the IP address pointed to by ap.  This address
- * is assumed to be in network byte order.
- *
- * NOTE: ap is *NOT* necessarily part of the packet data, so you
- * *CANNOT* use the ND_TCHECK_* or ND_TTEST_* macros on it.  Furthermore,
- * even in cases where it *is* part of the packet data, the caller
- * would still have to check for a null return value, even if it's
- * just printing the return value with "%s" - not all versions of
- * printf print "(null)" with "%s" and a null pointer, some of them
- * don't check for a null pointer and crash in that case.
- *
- * The callers of this routine should, before handing this routine
- * a pointer to packet data, be sure that the data is present in
- * the packet buffer.  They should probably do those checks anyway,
- * as other data at that layer might not be IP addresses, and it
- * also needs to check whether they're present in the packet buffer.
- */
+
 const char *
 ipaddr_string(netdissect_options *ndo, const u_char *ap)
 {
