@@ -1,50 +1,5 @@
 /*
- * 
-#define gethostbyaddr win32_gethostbyaddr
-#endif /* _WIN32 */
 
-struct h6namemem {
-	nd_ipv6 addr;
-	char *name;
-	struct h6namemem *nxt;
-};
-
-static struct h6namemem h6nametable[HASHNAMESIZE];
-
-struct enamemem {
-	u_short e_addr0;
-	u_short e_addr1;
-	u_short e_addr2;
-	const char *e_name;
-	u_char *e_nsap;			/* used only for nsaptable[] */
-	struct enamemem *e_nxt;
-};
-
-static struct enamemem enametable[HASHNAMESIZE];
-static struct enamemem nsaptable[HASHNAMESIZE];
-
-struct bsnamemem {
-	u_short bs_addr0;
-	u_short bs_addr1;
-	u_short bs_addr2;
-	const char *bs_name;
-	u_char *bs_bytes;
-	unsigned int bs_nbytes;
-	struct bsnamemem *bs_nxt;
-};
-
-static struct bsnamemem bytestringtable[HASHNAMESIZE];
-
-struct protoidmem {
-	uint32_t p_oui;
-	u_short p_proto;
-	const char *p_name;
-	struct protoidmem *p_nxt;
-};
-
-static struct protoidmem protoidtable[HASHNAMESIZE];
-
-/*
  * A faster replacement for inet_ntoa().
  */
 const char *
