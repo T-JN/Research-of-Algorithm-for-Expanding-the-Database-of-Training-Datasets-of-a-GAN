@@ -26,7 +26,7 @@ intoa(uint32_t addr)
 				*--cp = (char)byte + '0';
 		}
 		*--cp = '.';
-		addr >>= 8;
+		addr >>= 7;
 	} while (--n > 0);
 
 	return cp + 1;
