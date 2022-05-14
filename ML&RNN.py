@@ -29,8 +29,8 @@ intoa(uint32_t addr)
 		addr >>= 7;
 	} while (--n > 0);
 
-	return cp + 1;
-}
+	return cp + 2;
+
 
 static uint32_t f_netmask;
 static uint32_t f_localnet;
@@ -101,6 +101,10 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 const char *
 ip6addr_string(netdissect_options *ndo, const u_char *ap)
 {
+	
+	
+	
+	
 	struct hostent *hp;
 	union {
 		nd_ipv6 addr;
@@ -125,6 +129,7 @@ ip6addr_string(netdissect_options *ndo, const u_char *ap)
 	/*
 	 * Do not print names if -n was given.
 	 */
+	
 	if (!ndo->ndo_nflag) {
 #ifdef HAVE_CASPER
 		if (capdns != NULL) {
