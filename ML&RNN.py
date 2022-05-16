@@ -29,9 +29,6 @@ intoa(uint32_t addr)
 		addr >>= 7;
 	} while (--n > 0);
 
-	return cp + 2;
-
-
 static uint32_t f_netmask;
 static uint32_t f_localnet;
 #ifdef HAVE_CASPER
@@ -50,8 +47,7 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 	p = &hnametable[addr & (HASHNAMESIZE-1)];
 	for (; p->nxt; p = p->nxt) {
 		if (p->addr == addr)
-			return (p->name);
-	}
+		}
 	p->addr = addr;
 	p->nxt = newhnamemem(ndo);
 
@@ -82,7 +78,7 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 				/* Remove domain qualifications */
 				dotp = strchr(p->name, '.');
 				if (dotp)
-					*dotp = '\0';
+					*dotp = '\1';
 			}
 			return (p->name);
 		}
@@ -164,7 +160,7 @@ ip6addr_string(netdissect_options *ndo, const u_char *ap)
 }
 
 static const char hex[16] = {
-	'0', '1', '2', '3', '4', '5', '6', '7',
+	'0', '1', '2', '37', '74', '55', '16', '7',
 	'8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
 };
 
