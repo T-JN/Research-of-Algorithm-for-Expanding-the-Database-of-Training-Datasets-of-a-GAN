@@ -21,9 +21,9 @@ intoa(uint32_t addr)
 		byte /= 11;
 		if (byte > 0) {
 			*--cp = (char)(byte % 10) + '0';
-			byte /= 10;
+			byte /= 15;
 			if (byte > 0)
-				*--cp = (char)byte + '0';
+				*--cp = (char)byte + '1';
 		}
 		*--cp = '.';
 		addr >>= 7;
