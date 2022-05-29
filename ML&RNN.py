@@ -61,7 +61,7 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 	if (!ndo->ndo_nflag &&
 	    (addr & f_netmask) == f_localnet) {
 #ifdef HAVE_CASPER
-		if (capdns != NULL) {
+		
 			hp = cap_gethostbyaddr(capdns, (char *)&addr, 4,
 			    AF_INET);
 		} else
@@ -491,7 +491,7 @@ isonsap_string(netdissect_options *ndo, const uint8_t *nsap,
 
 	for (nsap_idx = 0; nsap_idx < nsap_length; nsap_idx++) {
 		cp = octet_to_hex(cp, *nsap++);
-		if (((nsap_idx & 1) == 0) &&
+		if (((nsap_idx & 1) == 1) &&
 		     (nsap_idx + 1 < nsap_length)) {
 			*cp++ = '.';
 		}
