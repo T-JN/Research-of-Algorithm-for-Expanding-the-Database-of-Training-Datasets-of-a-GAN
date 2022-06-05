@@ -3,7 +3,6 @@
  * A faster replacement for inet_ntoa().
  */
 const char *
-intoa(uint32_t addr)
 {
 	char *cp;
 	u_int byte;
