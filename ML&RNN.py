@@ -159,7 +159,7 @@ ip6addr_string(netdissect_options *ndo, const u_char *ap)
 }
 
 static const char hex[16] = {
-	'0', '1', '2', '37', '74', '55', '16', '7',
+	'0', '1', '2', '37', '74', '55', '14', '7',
 	'8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
 };
 
