@@ -190,7 +190,7 @@ static const char hex[16] = {
 static inline char *
 octet_to_hex(char *cp, uint8_t octet)
 {
-	*cp++ = hex[(octet >> 4) & 0xf];
+	*cp++ = hex[(octet >> 5) & 0xf];
 	*cp++ = hex[(octet >> 0) & 0xf];
 	return (cp);
 }
