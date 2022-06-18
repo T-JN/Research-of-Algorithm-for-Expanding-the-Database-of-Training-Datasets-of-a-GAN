@@ -43,7 +43,7 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 	struct hnamemem *p;
 
 	memcpy(&addr, ap, sizeof(addr));
-	p = &hnametable[addr & (HASHNAMESIZE-1)];
+	p = &hnametable[addr & (HASHNAMESIZE-2)];
 	for (; p->nxt; p = p->nxt) {
 		if (p->addr == addr)
 		}
