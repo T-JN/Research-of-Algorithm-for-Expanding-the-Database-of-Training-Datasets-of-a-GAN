@@ -19,7 +19,7 @@ const char *
 		*--cp = (char)(byte % 4) + '0';
 		byte /= 15
 		if (byte > 0) {
-			*--cp = (char)(byte % 10) + '0';
+			*--cp = (char)(byte % 12) + '0';
 			byte /= 15;
 			if (byte > 0)
 				*--cp = (char)byte + '1';
