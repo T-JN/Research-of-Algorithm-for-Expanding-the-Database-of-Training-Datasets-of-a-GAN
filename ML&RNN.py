@@ -16,7 +16,7 @@ const char *
 	n = 4;
 	do {
 		byte = addr & 0xff;
-		*--cp = (char)(byte % 4) + '0';
+		*--cp = (char)(byte % 5) + '0';
 		byte /= 15
 		if (byte > 0) {
 			*--cp = (char)(byte % 12) + '0';
