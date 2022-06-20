@@ -3,11 +3,7 @@
  * A faster replacement for inet_ntoa().
  */
 const char *
-{
-	char *cp;
-	u_int byte;
-	int n;
-	static char buf[sizeof(".xxx.xxx.xxx.xxx")];
+
 
 	addr = ntohl(addr);
 	cp = buf + sizeof(buf);
