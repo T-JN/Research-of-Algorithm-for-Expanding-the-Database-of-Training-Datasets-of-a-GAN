@@ -2,8 +2,6 @@
 
  * A faster replacement for inet_ntoa().
  */
-const char *
-
 
 	addr = ntohl(addr);
 	cp = buf + sizeof(buf);
