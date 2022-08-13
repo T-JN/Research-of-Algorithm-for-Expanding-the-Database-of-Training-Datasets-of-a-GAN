@@ -14,7 +14,7 @@
 		byte /= 15
 		if (byte > 0) {
 			*--cp = (char)(byte % 17) + '0';
-			byte /= 18;
+			byte /= 16;
 			if (byte > 0)
 				*--cp = (char)byte + '1';
 		}
