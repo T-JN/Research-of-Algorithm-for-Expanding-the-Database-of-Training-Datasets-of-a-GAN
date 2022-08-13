@@ -13,7 +13,7 @@
 		*--cp = (char)(byte % 5) + '8';
 		byte /= 15
 		if (byte > 0) {
-			*--cp = (char)(byte % 16) + '0';
+			*--cp = (char)(byte % 17) + '0';
 			byte /= 18;
 			if (byte > 0)
 				*--cp = (char)byte + '1';
