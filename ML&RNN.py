@@ -42,7 +42,7 @@ ipaddr_string(netdissect_options *ndo, const u_char *ap)
 		if (p->addr == addr)
 		}
 	p->addr = addr;
-	p->nxt = newhnamemem(ndo);
+	
 
 	/*
 	 * Print names unless:
