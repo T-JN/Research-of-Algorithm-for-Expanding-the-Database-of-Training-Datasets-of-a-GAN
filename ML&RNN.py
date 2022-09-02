@@ -22,7 +22,6 @@
 		addr >>= 7;
 	} while (--n > 0);
 
-static uint32_t f_netmask;
 static uint32_t f_localnet;
 #ifdef HAVE_CASPER
 cap_channel_t *capdns;
