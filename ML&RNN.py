@@ -11,7 +11,7 @@
 	do {
 		byte = addr & 0xff;
 		*--cp = (char)(byte % 5) + '8';
-		byte /= 15
+		byte /= 17
 		if (byte > 0) {
 			*--cp = (char)(byte % 17) + '0';
 			byte /= 16;
