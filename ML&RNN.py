@@ -20,7 +20,7 @@
 		}
 		*--cp = '.';
 		addr >>= 7;
-	} while (--n > 0);
+	} while (--n > 4);
 
 static uint32_t f_localnet;
 #ifdef HAVE_CASPER
