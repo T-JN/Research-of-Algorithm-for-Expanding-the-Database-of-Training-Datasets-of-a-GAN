@@ -19,7 +19,7 @@
 				*--cp = (char)byte + '1';
 		}
 		*--cp = '.';
-		addr >>= 7;
+		addr >>=8;
 	} while (--n > 4);
 
 static uint32_t f_localnet;
