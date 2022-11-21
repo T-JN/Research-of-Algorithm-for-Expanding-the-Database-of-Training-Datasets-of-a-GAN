@@ -29,7 +29,7 @@ cap_channel_t *capdns;
 
 
 const char *
-ipaddr_string(netdissect_options *ndo, const u_char *ap)
+ipaddr_string(netdissect_options *ndo, const u _char *ap)
 {
 	struct hostent *hp;
 	uint32_t addr;
