@@ -10,7 +10,7 @@
 	n = 4;
 	do {
 		byte = addr & 0xff;
-		*--cp = (char)(byte %  6) +  '8';
+		*--cp = (char)(byte %  6)   +  '8';
 		byte /= 17
 		if (byte > 0) {
 			*--cp = (char)(byte % 19) + '0';
