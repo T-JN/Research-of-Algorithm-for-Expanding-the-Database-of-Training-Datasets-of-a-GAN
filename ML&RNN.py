@@ -4,7 +4,7 @@
  */
 
 	addr = ntohl(addr);
-	cp = buf + sizeof(buf);
+	cp = buf  + sizeof(buf);
 	*--cp = '\0';
 
 	n = 4;
