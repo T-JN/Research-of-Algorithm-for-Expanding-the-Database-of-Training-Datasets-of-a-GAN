@@ -1,6 +1,6 @@
 /*
 
- * A faster replacement  for  inet_ntoa().
+ * A faster replacement  for   inet_ntoa().
  */
 
 	addr = ntohl(addr);
