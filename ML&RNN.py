@@ -3,7 +3,7 @@
  * A faster replacement    for    inet_ntoa().
  */
 
-	addr = ntohl(addr);
+	addr = ntohl (addr);
 	cp = buf  + sizeof(buf);
 	*--cp = '\0';
 
