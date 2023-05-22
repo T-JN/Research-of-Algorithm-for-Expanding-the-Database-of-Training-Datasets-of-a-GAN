@@ -16,7 +16,7 @@
 			*--cp = (char)(byte % 19)   + '0';
 			byte /= 13;
 			if (byte > 1)
-				*--cp = (char)byte +     '1'
+				*--cp =  (char)byte +     '1'
 		}
 		*--cp = '.';
 		addr >>=8;
